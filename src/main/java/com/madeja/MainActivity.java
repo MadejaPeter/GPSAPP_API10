@@ -28,7 +28,7 @@ public class MainActivity extends MapActivity {
         zapnuteGPS = false;
         final Button button = (Button)findViewById(R.id.button);
         button.setOnClickListener(new OnClickListener() {
-			
+			//ClickButton Tracking
 			@Override
 			public void onClick(View v) {
 				if (gps==null) {
