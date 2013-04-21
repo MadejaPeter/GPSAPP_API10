@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout 
+<LinearLayout 
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/mainlayout"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-
-
-<com.google.android.maps.MapView
-    android:id="@+id/mapview"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:clickable="true"
-    android:apiKey="0aoaEUd4oEQEqzQY-zUlQMF_JWRkSZxHa5eCXLg" >
-    <!--android:apiKey="0D2ZOUF8uLgNgP_pp4Gact7CMosvgg0C3uKlZjw"--> 
     
-</com.google.android.maps.MapView>
-
- <Button
-     	android:id="@+id/button"
-        android:layout_width="96dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:text="Zapni Tracking" />
-</RelativeLayout>   
+    <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+    	<EditText
+	        android:id="@+id/search"
+	        android:layout_width="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content" />
+	        <requestFocus />
+	    <Button
+	    	android:id="@+id/searchbutton"
+	    	android:layout_width="96dp"
+	    	android:layout_height="wrap_content"
+	    	android:text="hladaj" />
+	    <Button
+	     	android:id="@+id/button"
+	        android:layout_width="96dp"
+	        android:layout_height="wrap_content"
+	        android:text="tracking" />
+    </LinearLayout>
+	<com.google.android.maps.MapView
+	    android:id="@+id/mapview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:clickable="true"
+	    android:apiKey="0aoaEUd4oEQEqzQY-zUlQMF_JWRkSZxHa5eCXLg">
+	    <!--android:apiKey="0D2ZOUF8uLgNgP_pp4Gact7CMosvgg0C3uKlZjw"--> 
+	</com.google.android.maps.MapView>
+</LinearLayout>  
