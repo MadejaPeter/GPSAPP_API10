@@ -62,12 +62,14 @@ public class MainActivity extends MapActivity {
 			}
 		});
         
+        mapView.getController().setZoom(15);
         Location loc = gps.getCurrentLocation();
         final MapController controller = mapView.getController();
         
-        mapView.getController().animateTo(new GeoPoint((int)(loc.getLatitude() * 1E6), (int)(loc.getLongitude() * 1E6)));
-        Log.i("I", "Location" + loc.toString());
-        mapView.getController().setZoom(15);
+        if (loc!=null) {
+        	mapView.getController().animateTo(new GeoPoint((int)(loc.getLatitude() * 1E6), (int)(loc.getLongitude() * 1E6)));
+        	Log.i("I", "Location" + loc.toString());
+        }
         
         final Button searchButton = (Button)findViewById(R.id.searchbutton);
         searchButton.setOnClickListener(new OnClickListener() {

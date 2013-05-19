@@ -32,7 +32,7 @@
 	    android:layout_width="fill_parent"
 	    android:layout_height="fill_parent"
 	    android:clickable="true"
-	    android:apiKey="0aoaEUd4oEQEqzQY-zUlQMF_JWRkSZxHa5eCXLg">
+	    android:apiKey="0D2ZOUF8uLgNgP_pp4Gact7CMosvgg0C3uKlZjw">
 	    <!--android:apiKey="0D2ZOUF8uLgNgP_pp4Gact7CMosvgg0C3uKlZjw"--> 
 	</com.google.android.maps.MapView>
 </LinearLayout>  
