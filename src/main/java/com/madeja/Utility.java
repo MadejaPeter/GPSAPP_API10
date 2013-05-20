@@ -1,5 +1,5 @@
 package com.madeja;
-
+ 
 public class Utility {
 
 	boolean tracking;
